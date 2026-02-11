@@ -1,0 +1,32 @@
+{
+  "name": "backend_api_express",
+  "version": "1.0.0",
+  "description": "API BAckend com Express, Prisma ORM e Zod",
+  "keywords": [
+    "api",
+    "express",
+    "prisma",
+    "zod",
+    "mvc",
+    "middlewares"
+  ],
+  "homepage": "https://github.com/Felpzzcr7/Backend_API_Express#readme",
+  "bugs": {
+    "url": "https://github.com/Felpzzcr7/Backend_API_Express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felpzzcr7/Backend_API_Express.git"
+  },
+  "license": "ISC",
+  "author": "Felipe Costa",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start":"node src/server.js",
+    "dev":"node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
