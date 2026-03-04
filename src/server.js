@@ -1,32 +1,18 @@
 //const express = require('express')
 import express from 'express'
+import userRouter from './routers/userRouter.js'
+import postRouter from './routers/postRouter.js'
+
 const app = express()
-const port = 1500
+const port = 3400
 
 app.get('/', (req, res) => {
   res.send('Ola Mundo express API!')
 })
 
-app.get('/user', (req, res) => {
-  res.send('exemplo de get na rota user!')
-})
-
-app.post('/user', (req, res) => {
-  res.send('exemplo de post na rota user!')
-})
-
-app.put('/user', (req, res) => {
-  res.send('exemplo de put na rota user!')
-})
-
-app.patch('/user', (req, res) => {
-  res.send('exemplo de patch na rota user!')
-})
-
-app.delete('/user', (req, res) => {
-  res.send('exemplo de delete na rota user!')
-})
+app.use('/post', postRouter)
+app.use('/user', userRouter)
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port  ${port}`)
 }) 
