@@ -52,3 +52,25 @@ R: é uma soluçao reutilizável para um problema comum em desenvolvimento de so
 
 o que e o padrao MVC?
 R: é um padrão de projeto que divide a aplicação em três camadas: Model, View e Controller. O Model é responsável pelas regras de negócio, validações e acesso aos dados. O View é responsável pela interface do usuário, onde ele exibe os dados e recebe as interações do usuário. O Controller é responsável pelo controle do fluxo de entrada, processamento e saída de dados, onde ele recebe as requisições do usuário, processa os dados e retorna a resposta para o View. O uso do padrão MVC ajuda a organizar o código, tornando-o mais modularizado e fácil de manter.
+
+o que e ORM?
+R: é um mapeamento objeto-relacional, onde ele permite que o desenvolvedor trabalhe com objetos em vez de tabelas e colunas do banco de dados. O ORM é uma camada de abstração que facilita o acesso aos dados, permitindo que o desenvolvedor escreva código mais limpo e legível, sem se preocupar com a complexidade do SQL. Alguns exemplos de ORM são: Sequelize, TypeORM, Mongoose, prisma.
+
+quais as vantagens de usar um ORM?
+R:
+ -facilita a troca de banco de dados, pois o ORM é independente do banco de dados, onde ele pode ser configurado para trabalhar com diferentes bancos de dados sem precisar alterar o código.
+
+### comandos prisma
+
+        instalaçao do prisma
+- npm i prisma -D
+- npm i dotenv -D
+
+        inicializaçao do prisma
+- npx prisma init --datasource-provider mysql --output ../generated/prisma
+
+        criar o banco de dados
+- npx prisma db push
+
+
+
