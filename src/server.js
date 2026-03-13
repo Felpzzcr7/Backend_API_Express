@@ -14,5 +14,5 @@ app.use('/post', postRouter)
 app.use('/user', userRouter)
 
 app.listen(port, () => {
-  console.log(`Example app listening on port  ${port}`)
+  console.log(`Servidor rondando em http://localhost:${port}`)
 }) 
