@@ -1,3 +1,10 @@
-export function getPubController(req, res) {
-    res.send('exemplo de get na rota post usando controller!')    
+import {getpub} from '../../models/pubModel.js';
+
+export async function getPubController(req, res) {
+    const result = await getpub()
+    res.json({
+        message: "Publicações encontradas com sucesso!",
+        publications: result
+    })
+    
 }
