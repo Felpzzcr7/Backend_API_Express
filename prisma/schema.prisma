@@ -21,3 +21,13 @@ model user {
   pass  String  @db.VarChar(500)
 
 }
+
+model publication {
+  id    Int     @id @default(autoincrement())
+  title String  @db.VarChar(500)
+  content  String  @db.VarChar(800)
+  image String?  @db.VarChar(1000)
+  
+ 
+
+}

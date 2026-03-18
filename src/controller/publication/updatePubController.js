@@ -1,3 +1,3 @@
-export function updatePostController(req, res) {
+export function updatePubController(req, res) {
     res.send('exemplo de put na rota post usando controller!')
 }
