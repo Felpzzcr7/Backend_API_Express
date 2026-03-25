@@ -13,10 +13,10 @@ router.get('/', getPubController)
 
 router.post('/', createPubController )
 
-router.put('/', updatePubController)
+router.put('/:id', updatePubController)
 
-router.patch('/', patchPubController)
+router.patch('/:id', patchPubController)
 
-router.delete('/', deletePubController)
+router.delete('/:id', deletePubController)
   
 export default router
