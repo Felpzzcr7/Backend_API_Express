@@ -63,13 +63,16 @@ R:
 ### comandos prisma
 
 - instalaçao do prisma
+
         npm i prisma -D
+
         npm i dotenv -D
 
 - inicializaçao do prisma
         npx prisma init --datasource-provider mysql --output ../generated/prisma
 
 - criar o banco de dados
+
         npx prisma db push
 
  Como utilizar parâmetros de Url?
