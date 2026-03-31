@@ -72,5 +72,8 @@ R:
         criar o banco de dados
 - npx prisma db push
 
+ Como utilizar parâmetros de Url?
+  R: Parâmetros de URL são pares de chave=valor adicionados ao final de um link, após um ponto de interrogação (?), usados para rastrear tráfego (UTMs), filtrar conteúdo ou personalizar páginas sem alterar o destino final. Eles funcionam no formato www.site.com?chave1=valor1&chave2=valor2, separados pelo caractere &
 
-
+ O que é Middleware? (Exemplo Logger)
+R:Middleware é um componente de software que atua como uma "ponte" ou filtro entre a requisição do cliente e o processamento final no servidor
