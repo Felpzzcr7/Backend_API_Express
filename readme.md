@@ -69,6 +69,7 @@ R:
         npm i dotenv -D
 
 - inicializaçao do prisma
+
         npx prisma init --datasource-provider mysql --output ../generated/prisma
 
 - criar o banco de dados
