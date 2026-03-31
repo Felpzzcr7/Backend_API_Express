@@ -62,15 +62,15 @@ R:
 
 ### comandos prisma
 
-        instalaçao do prisma
-- npm i prisma -D
-- npm i dotenv -D
+- instalaçao do prisma
+        npm i prisma -D
+        npm i dotenv -D
 
-        inicializaçao do prisma
-- npx prisma init --datasource-provider mysql --output ../generated/prisma
+- inicializaçao do prisma
+        npx prisma init --datasource-provider mysql --output ../generated/prisma
 
-        criar o banco de dados
-- npx prisma db push
+- criar o banco de dados
+        npx prisma db push
 
  Como utilizar parâmetros de Url?
   R: Parâmetros de URL são pares de chave=valor adicionados ao final de um link, após um ponto de interrogação (?), usados para rastrear tráfego (UTMs), filtrar conteúdo ou personalizar páginas sem alterar o destino final. Eles funcionam no formato www.site.com?chave1=valor1&chave2=valor2, separados pelo caractere &
