@@ -38,7 +38,6 @@ R: ele fica observando os arquivos e rodar o servidor em modo de desenvolvimento
 
 model
 -regrras de negocio
--validaçoes
 -acesso aos dados
 
 controller
