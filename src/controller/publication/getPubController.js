@@ -1,4 +1,4 @@
-import {getpub} from '../../models/pubModel.js';
+import {getPublication} from '../../models/pubModel.js';
 
 export async function getPubController(req, res) {
     const result = await getpub()

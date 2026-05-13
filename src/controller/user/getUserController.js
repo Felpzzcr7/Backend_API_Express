@@ -1,10 +1,12 @@
-import { getUsers } from '../../models/userModel.js';
+import { getUsers } from "../../models/userModel.js"
 
-export async function getUserController(req, res) {
-   const result= await getUsers()  
+export async function getUserController(req, res){
+    const {name} = req.query
+
+    const result = await getUsers(name)
+
     res.json({
-        message: "Usuários encontrados com sucesso!",
+        message: "Usuários listados com sucesso", 
         users: result
     })
 }
-

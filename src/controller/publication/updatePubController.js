@@ -1,14 +1,34 @@
-import { updatePub } from "../../models/pubModel.js"        
 
+import { updatePublication, validatePublication } from "../../models/pubModel.js";
 
-export async function updatePubController(req, res) {
-       const {id}= req.params
-        const pub = req.body
-    
-        const result = await updatePub(pub, +id)
-    
+export async function updatePubController(req, res, next){
+  try{
+        const {id} = req.params
+        const publication = req.body
+        publication.id = +id
+
+        const {success, error, data: publicationValidated} = validatePublication(publication)
+
+        if(!success){
+            return res.status(400).json({
+                message: "Erro de validação",
+                fieldErrors: error
+            })
+        }
+
+        const result = await updatePublication(publicationValidated, publicationValidated.id)
+
         return res.json({
-          message: "publicaco atualizado com sucesso",
-          pub: result
+            message: "Publicação atualizada com sucesso!",
+            publication: result
         })
+    }catch(error) {
+        if(error.code === 'P2025'){
+            console.log(error.message)
+            return res.status(404).json({
+                message: "Publicação não encontrada para ser atualizada."
+            })
+        }
+        next(error)
+    }
 }

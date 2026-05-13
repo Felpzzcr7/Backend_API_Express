@@ -80,3 +80,16 @@ R:
 
  O que é Middleware? (Exemplo Logger)
 R:Middleware é um componente de software que atua como uma "ponte" ou filtro entre a requisição do cliente e o processamento final no servidor
+
+
+
+para que serve o zod?
+R e uma biblioteca que ajuda a fazer as validacoes dos dados antes de salva-los e construir as regras de negocio do models
+
+Para que serve a função Partial?
+
+Qual a diferença do parse para o safeParse?
+
+Tratamento de Erros
+
+Autenticação com JWT
